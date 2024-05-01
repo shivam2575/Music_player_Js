@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/b802519fc3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div id="header-container">
+        <div id="heading-container">
+          <h2>Music Player</h2>
+        </div>
+        <div id="toggle-container">
+            <input id="toggle-switch" name="toggle-switch" type="checkbox"/>
+            <label for="toggle-switch"></label>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div id="main-container">
+        <div id="all-songs-card" class="card-display card-1-3-container">
+          <div class="all-songs-header card-1-3-content">
+            <span>Filter by gener:</span>
+            <select name="gener" id="gener-list"></select>
+          </div>
+          <h2 class="card-1-3-content">All songs</h2>
+          <div class="all-songs-content card-1-3-content"></div>
+        </div>
+        <div id="player-card" class="card-display card-2-container">
+          <div class="song-details">
+            <div class="song-img"></div>
+            <div class="song-artist-name">
+              <p class="song-name">song name</p>
+              <p class="artist-name">artist name</p>
+            </div>
+          </div>
+          <audio controls src=""></audio>
+          <div class="player-btn-container">
+            <button id="prev-btn">prev</button>
+            <button id="next-btn">next</button>
+            <button id="add-to-list-btn">add to playlist</button>
+          </div>
+        </div>
+        <div id="playlist" class="card-display card-1-3-container">
+          <div class="create-playlist-container card-1-3-content">
+            <input id="playlist-input" type="text" placeholder="Enter Playlist Name" />
+            <button id="playlist-btn">Create Playlist</button>
+          </div>
+          <div class="playlist-content card-1-3-content">
+            <h4>Current Playlist</h4>
+            <div class="current-playlist"></div>
+            <h4>All Playlist</h4>
+            <div class="all-playlist"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
